@@ -9,6 +9,9 @@ body {
     min-width: 1440px;
 }
 
+:root {
+    --drop-border: #d1d1d4;
+}
 
 /* #region utilities */
 
@@ -41,9 +44,11 @@ body {
     color: white;
     padding: 7px 13px;
 }
+
 .btn:hover {
-        background-color: #5a99ff;
-    }
+    background-color: #5a99ff;
+}
+
 /* #endregion utilities */
 
 /* #region col- */
@@ -153,19 +158,114 @@ header {
 
 #jumbotron {
     background-color: #b4d0e7;
+
     h2 {
         padding: 5rem 0;
         font-size: 5rem;
     }
+
     a {
         text-decoration: none;
         color: black;
     }
-    img{
+
+    img {
         margin: -5rem 0;
     }
-    i{
+
+    i {
         font-size: 3rem;
+    }
+}
+
+
+#plans {
+    margin-top: 3rem;
+
+    h2 {
+        padding: 5rem 0;
+        font-size: 2rem;
+    }
+
+    ul {
+        list-style: none;
+        gap: 5rem;
+    }
+
+    .row {
+        margin-top: 5rem;
+    }
+
+    .plans_titles {
+        justify-content: center;
+        padding: 1rem;
+        border: 2px solid var(--drop-border);
+    }
+
+    .professional,
+    .advanced,
+    .enterprise {
+        border: 2px solid var(--drop-border);
+        padding-left: 1rem;
+
+        ul {
+            padding-top: 2.5rem;
+
+            li {
+                margin: 1rem 0;
+            }
+        }
+    }
+
+    .professional>div,
+    .advanced>div,
+    .enterprise>div {
+        margin-top: 1.5rem;
+
+    }
+
+    .btn {
+        display: flex;
+        justify-content: center;
+        margin-right: 1rem;
+    }
+
+    hr {
+        color: var(--drop-border);
+        margin: 3rem 15rem 3rem 0;
+    }
+
+    .fa-check {
+        color: #0061ff;
+    }
+
+}
+
+.team_plan {
+    border: 1px solid var(--drop-border);
+
+    .team_enterprise {
+        border: 1px solid var(--drop-border);
+        padding: 1rem;
+        justify-content: center;
+    }
+
+    h4 {
+        font-size: 25px;
+    }
+
+    .team_contact {
+        justify-content: space-between;
+        padding: 2rem;
+    }
+
+    h3 {
+        padding-left: 2rem;
+        padding-bottom: 5rem;
+    }
+
+    p {
+        padding: 2rem;
     }
 }
 
