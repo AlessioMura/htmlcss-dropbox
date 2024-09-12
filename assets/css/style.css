@@ -236,11 +236,14 @@ header {
         border: 2px solid var(--drop-border);
     }
 
-    .professional,
-    .advanced,
-    .enterprise,
-    .plans_titles {
-        margin-right: 2rem;
+    .singolo,
+    .team {
+        padding-right: 1rem;
+    }
+
+    .team,
+    .azienda {
+        padding-left: 1rem;
     }
 
     .professional,
@@ -409,7 +412,7 @@ header {
         }
 
         p {
-            margin: 4rem 0;
+            margin: 2rem 0;
         }
     }
 
@@ -531,7 +534,7 @@ footer {
         gap: 1rem;
     }
 
-    hr{
+    hr {
         margin: 7rem 90% 3rem 0;
     }
 }
