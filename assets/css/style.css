@@ -106,6 +106,7 @@ body {
 /* #region header */
 
 header {
+    justify-content: space-between;
     padding: 1.5rem;
     position: sticky;
     top: 0;
@@ -132,13 +133,7 @@ header {
 
 /* #region right menu */
 .right_h {
-    margin-left: 48%;
-    /* justify-content: flex-end; */
     align-items: center;
-
-    .right_menu {
-        justify-content: flex-end;
-    }
 
     nav {
         a {
@@ -156,12 +151,19 @@ header {
 
 /* #region main */
 
+/* #region jumbotron */
 #jumbotron {
     background-color: #b4d0e7;
 
     h2 {
         padding: 5rem 0;
         font-size: 5rem;
+    }
+
+    .col-4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     a {
@@ -178,7 +180,9 @@ header {
     }
 }
 
+/* #endregion jumbotron */
 
+/* #region plans */
 #plans {
     margin-top: 3rem;
 
@@ -200,6 +204,13 @@ header {
         justify-content: center;
         padding: 1rem;
         border: 2px solid var(--drop-border);
+    }
+
+    .professional,
+    .advanced,
+    .enterprise,
+    .plans_titles {
+        margin-right: 2rem;
     }
 
     .professional,
@@ -241,7 +252,12 @@ header {
 
 }
 
+/* #endregion plans */
+
+/* #region plansfooter */
+
 .team_plan {
+    margin-top: 2rem;
     border: 1px solid var(--drop-border);
 
     .team_enterprise {
@@ -269,4 +285,52 @@ header {
     }
 }
 
+/* #endregion plansfooter */
+
+/* #region partner */
+
+#partner {
+
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+
+    .col-4 {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    h2 {
+        padding-bottom: 2rem;
+    }
+
+    .btn {
+        background: #e8e8e9;
+        color: black;
+        border: 2px solid var(--drop-border);
+    }
+
+    .btn:hover {
+        background-color: #d1d1d4;
+    }
+
+}
+
+/* #endregion partner */
+
+/* #region operations */
+
+#operations{
+    img{
+        width: 100%;
+    }
+
+    h3, h2, .col-4{
+        margin-bottom: 2rem;
+    }
+    
+}
+
+/* #endregion operations */
 /* #endregion main */
