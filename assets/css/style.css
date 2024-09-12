@@ -347,11 +347,12 @@ header {
 
     .container_sm {
         height: rem;
-        margin-bottom: 2rem;
+        margin-bottom: 8rem;
     }
 
     h2 {
         font-size: 2rem;
+        margin-bottom: 4rem;
     }
 
     .col-7 {
