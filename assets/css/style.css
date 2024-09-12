@@ -11,6 +11,7 @@ body {
 
 :root {
     --drop-border: #d1d1d4;
+    --drop-bg-color: #b4d0e7;
 }
 
 /* #region utilities */
@@ -48,13 +49,27 @@ body {
     background-color: #0061ff;
     color: white;
     padding: 7px 13px;
+
+    .btn:hover {
+        background-color: #5a99ff;
+    }
+}
+
+.btn2 {
+    text-decoration: none;
+    background: #e8e8e9;
+    color: black;
+    padding: 7px 13px;
+    border: 2px solid var(--drop-border);
+}
+
+.btn2:hover {
+    background-color: #d1d1d4;
 }
 
 .btn:hover {
     background-color: #5a99ff;
 }
-
-/* #endregion utilities */
 
 /* #region col- */
 
@@ -108,6 +123,8 @@ body {
 
 /* #endregion col- */
 
+/* #endregion utilities */
+
 /* #region header */
 
 header {
@@ -158,7 +175,7 @@ header {
 
 /* #region jumbotron */
 #jumbotron {
-    background-color: #b4d0e7;
+    background-color: var(--drop-bg-color);
 
     h2 {
         padding: 5rem 0;
@@ -310,15 +327,7 @@ header {
         padding-bottom: 2rem;
     }
 
-    .btn {
-        background: #e8e8e9;
-        color: black;
-        border: 2px solid var(--drop-border);
-    }
 
-    .btn:hover {
-        background-color: #d1d1d4;
-    }
 
 }
 
@@ -380,9 +389,6 @@ header {
 
     .right_logos {
         flex-wrap: wrap;
-
-
-        img {}
     }
 
     .center_sect {
@@ -442,4 +448,56 @@ header {
 }
 
 /* #endregion logos */
+
+/* #region cta */
+#cta {
+    background-color: var(--drop-bg-color);
+    padding: 8rem 0;
+
+    .container {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+}
+
+/* #endregion cta */
+
+/* #region faq */
+
+#faq {
+
+    padding: 8rem 0;
+
+    h2 {
+        padding-bottom: 3rem;
+    }
+
+    hr {
+        color: var(--drop-border);
+    }
+
+    .text_hover {
+        padding-top: 2rem;
+    }
+
+    .question,
+    .answer {
+        padding-bottom: 2rem;
+    }
+}
+
+.answer {
+    display: none;
+}
+
+.question:hover+.answer {
+    display: block;
+}
+
+/* #endregion faq */
+
 /* #endregion main */
