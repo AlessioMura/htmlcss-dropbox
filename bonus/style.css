@@ -559,6 +559,23 @@ footer {
         width: 90%;
     }
 
+    header {
+        padding: 5px;
+
+        .left_menu,
+        .right_menu {
+            display: flex;
+            flex-direction: column;
+
+            a {
+                border: 1px solid var(--drop-border);
+                margin-top: 5px;
+                margin-right: 5px;
+            }
+        }
+
+    }
+
     #jumbotron {
 
         h2 {
@@ -646,6 +663,25 @@ footer {
 
     }
 
+    #cta {
+        .container {
+            flex-wrap: wrap;
+        }
+
+        .col-8 {
+            margin-bottom: 2rem;
+        }
+    }
+
+    footer {
+
+        padding: 0;
+
+        .col {
+            padding: 1rem 7rem 1rem 0;
+
+        }
+    }
 }
 
 /* #endregion responsiv */
